@@ -1,0 +1,10 @@
+{
+  "name": "biljeznica",
+  "version": "1.0.0",
+  "description": "Jednostavan popis zadataka za naredbeni redak",
+  "type": "module",
+  "main": "glavni.js",
+  "scripts": {
+    "start": "node glavni.js"
+  }
+}
