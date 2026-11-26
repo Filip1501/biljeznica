@@ -1,4 +1,4 @@
-// Ulazna točka: čita argumente iz process.argv i izvršava naredbe.
+
 import { ucitajZadatke, spremiZadatke } from './pohrana.js';
 
 async function dodaj(naslov) {

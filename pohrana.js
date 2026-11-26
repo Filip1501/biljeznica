@@ -1,4 +1,4 @@
-// Pohrana zadataka: učitavanje i spremanje u datoteku zadaci.json.
+
 import { readFile, writeFile } from 'node:fs/promises';
 
 const DATOTEKA = new URL('./zadaci.json', import.meta.url);
@@ -9,7 +9,7 @@ export async function ucitajZadatke() {
     sadrzaj = await readFile(DATOTEKA, 'utf-8');
   } catch (pogreska) {
     if (pogreska.code === 'ENOENT') {
-      return []; // datoteka ne postoji: prazan popis
+      return []; 
     }
     throw new Error(`Datoteku zadaci.json nije moguće pročitati: ${pogreska.message}`);
   }
